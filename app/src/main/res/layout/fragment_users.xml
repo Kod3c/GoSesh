@@ -1,0 +1,247 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.twdev.gosesh.Users.Users_F">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_list_layout">
+
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_marginBottom="80dp"
+                     android:background="@color/white"
+                     android:transitionName="transtion_name_example"
+                     android:id="@+id/shared_element">
+
+            <com.yuyakaido.android.cardstackview.CardStackView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="20dp"
+                app:elevationEnabled="false"
+                app:leftOverlay="@layout/overlay_left"
+                app:rightOverlay="@layout/overlay_right"
+                app:topOverlay="@layout/overlay_top"
+                android:id="@+id/card_viewstack"
+                app:swipeDirection="freedom_no_bottom" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="fitXY"
+                android:id="@+id/detail_btn"
+                android:layout_marginEnd="15dp"
+                android:visibility="visible"
+                android:padding="5dp"
+                android:layout_marginBottom="30dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_detail_btn"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"/>
+
+                 </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/bottom_btn"
+            android:layout_alignParentBottom="true">
+
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+             <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:id="@+id/refresh_btn"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_refresh"/>
+
+
+             <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:id="@+id/cross_btn"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_cross"/>
+
+
+             <ImageButton
+                 android:layout_width="60dp"
+                 android:layout_height="60dp"
+                 android:scaleType="fitCenter"
+                 android:layout_weight="1"
+                 android:id="@+id/supperlike_btn"
+                 android:background="@color/transparent"
+                 android:src="@drawable/ic_superlike"/>
+
+
+             <ImageButton
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"
+                    android:id="@+id/heart_btn"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_heart"/>
+
+
+             <ImageButton
+                 android:layout_width="60dp"
+                 android:layout_height="60dp"
+                 android:scaleType="fitCenter"
+                 android:layout_weight="1"
+                 android:id="@+id/boost_btn"
+                 android:background="@color/transparent"
+                 android:src="@drawable/ic_boost"/>
+
+         </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/find_nearby_User">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/finding_bottom_btns">
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/pulsator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:pulse_count="4"
+            app:pulse_duration="10000"
+            app:pulse_repeat="1000"
+            app:pulse_color="@color/pink_color"
+            app:pulse_startFromScratch="true"
+            app:pulse_interpolator="Linear">
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/profileimage"
+            android:src="@drawable/image_placeholder"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/discovery_settings"
+            android:textAllCaps="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="80dp"
+            android:layout_below="@+id/profileimage"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/ic_pink_background"
+            android:id="@+id/change_setting_btn"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/finding_bottom_btns"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/finding_refresh_btn"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_refresh"/>
+
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_cross_gray"/>
+
+
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_heart_gray"/>
+
+
+
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/ic_superlike_gray"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

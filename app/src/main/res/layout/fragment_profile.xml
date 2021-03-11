@@ -1,0 +1,197 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="com.twdev.gosesh.Profile.Profile_F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/lightgraycolor">
+
+        <com.github.florent37.shapeofview.shapes.ArcView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:elevation="1dp"
+            app:shape_arc_height="50dp"
+            app:shape_arc_position="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:id="@+id/profile_image"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    app:roundAsCircle="true"
+                    app:placeholderImageScaleType="centerCrop"
+                    app:actualImageScaleType="fitCenter"
+                    fresco:placeholderImage="@drawable/image_placeholder" />
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/d_ripple_effect">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:id="@+id/user_name"
+                    android:text="@string/profile_name"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:text=""
+                        android:id="@+id/age"
+                        android:maxLines="1"
+                        android:layout_marginStart="2dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:gravity="center">
+
+                  <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginEnd="30dp"
+                            android:id="@+id/profile_layout">
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:layout_weight="1">
+
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="center"
+                              android:id="@+id/setting_layout"
+                              android:layout_gravity="center">
+
+                              <ImageView
+                                  android:layout_width="50dp"
+                                  android:layout_height="50dp"
+                                  android:src="@drawable/ic_setting"/>
+
+                           <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings"
+                            android:textAllCaps="true"
+                            android:textColor="@color/dimgray"
+                            android:textSize="12dp"
+                            android:padding="2dp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"/>
+                      </LinearLayout>
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:layout_width="1dp"
+                          android:layout_height="match_parent"
+                          android:layout_marginTop="10dp"
+                          android:layout_marginBottom="10dp"
+                          android:background="@color/graycolor"></LinearLayout>
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:layout_weight="1">
+
+                          <LinearLayout
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical"
+                              android:gravity="center"
+                              android:id="@+id/edit_profile_layout"
+                              android:layout_gravity="center">
+
+                              <ImageView
+                                  android:layout_width="50dp"
+                                  android:layout_height="50dp"
+                                  android:src="@drawable/ic_edit"/>
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="@string/edit_profile"
+                                  android:textAllCaps="true"
+                                  android:textColor="@color/dimgray"
+                                  android:textSize="12dp"
+                                  android:padding="2dp"
+                                  android:id="@+id/edit_profile_btn"
+                                  android:textStyle="bold"
+                                  android:layout_marginTop="5dp"/>
+                          </LinearLayout>
+                      </LinearLayout>
+
+
+
+                  </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </com.github.florent37.shapeofview.shapes.ArcView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/lightgraycolor">
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+</FrameLayout>

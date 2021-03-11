@@ -1,0 +1,48 @@
+
+apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.android.library'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.7.0'
+    }
+}
+
+def version = "1.0.5"
+
+publish {
+    userOrg = 'shinhyo'
+    groupId = 'com.wonshinhyo'
+    artifactId = 'dragrecyclerview'
+    publishVersion = version
+    website = 'https://github.com/shinhyo/DragRecyclerView'
+    issueTracker = "${website}/issues"
+    repository = "${website}.git"
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName version
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:recyclerview-v7:' + rootProject.ext.supportVersion
+}

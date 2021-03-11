@@ -1,0 +1,267 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.twdev.gosesh.Profile.Profile_Details.Profile_Details_F">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:id="@+id/scrollView"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="80dp"
+                android:background="@color/white">
+
+                <androidx.percentlayout.widget.PercentRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_layout">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        app:layout_heightPercent="80%"
+                        android:background="@color/black"
+                        android:id="@+id/shared_element">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/image_slider_pager">
+
+                            </androidx.viewpager.widget.ViewPager>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:paddingBottom="30dp">
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp" />
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/white"/>
+
+
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            app:tabBackground="@drawable/d_indicator_background"
+                            app:tabGravity="center"
+                            app:tabIndicatorHeight="0dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_alignParentBottom="true"
+                            />
+
+
+                        <ImageButton
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/move_downbtn"
+                            android:layout_marginEnd="15dp"
+                            android:visibility="visible"
+                            android:background="@color/transparent"
+                            android:src="@drawable/ic_binder_move_below"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"/>
+
+
+                    </RelativeLayout>
+
+
+                </androidx.percentlayout.widget.PercentRelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/username_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_name_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/profile_name"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/bottom_layout"
+                    android:visibility="visible"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@color/white"
+                    android:layout_below="@+id/card_viewstack">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/job_layout">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_exploring_gray"
+                            android:scaleType="fitCenter"/>
+                        <TextView
+                            android:id="@+id/user_jobtitle_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/job_title"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/dimgray"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/school_layout">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_school_gray"
+                            android:scaleType="fitCenter"/>
+                        <TextView
+                            android:id="@+id/user_school_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/school_college"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/dimgray"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/birthday_layout">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_birthday"
+                            android:scaleType="fitCenter"/>
+                        <TextView
+                            android:id="@+id/user_birthday_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date_of_birth"
+                            android:layout_marginStart="5dp"
+                            android:textColor="@color/dimgray"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/gender_layout">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_gender"
+                            android:scaleType="fitCenter"/>
+                        <TextView
+                            android:id="@+id/user_gender_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gender"
+                            android:textColor="@color/dimgray"
+                            android:layout_marginStart="5dp"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/dimgray"
+                            android:text="@string/about"
+                            android:textSize="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/user_about_txt"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="5dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="fitCenter"
+            android:id="@+id/edit_btn"
+            android:background="@color/transparent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_round_edit_color"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

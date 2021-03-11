@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/d_top_bottom_border_line"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/maximum_distance"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mile"
+                android:id="@+id/distance_txt"
+                android:textColor="@color/dark_gray"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <com.zhouyou.view.seekbar.SignSeekBar
+            android:id="@+id/distance_bar"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:minHeight="16dp"
+            android:paddingTop="20dp"
+            app:ssb_max="10000"
+            app:ssb_min="5"
+            app:ssb_progress="100"
+            app:ssb_second_track_color="@color/pink_color"
+            app:ssb_show_section_text="false"
+            app:ssb_show_thumb_text="false"
+            app:ssb_thumb_color="@color/pink_color"
+            app:ssb_thumb_radius="10dp"
+            app:ssb_track_color="@color/gainsboro"
+            app:ssb_track_size="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="@color/white">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age_range"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:id="@+id/age_range_txt"
+                android:textColor="@color/dark_gray"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <com.appyvet.materialrangebar.RangeBar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/age_seekbar"
+            app:mrb_connectingLineColor="@color/pink_color"
+            app:mrb_connectingLineWeight="6dp"
+            app:mrb_rangeBar="true"
+            app:mrb_thumbSize="12dp"
+            app:mrb_tickHeight="0dp"
+            app:mrb_thumbColor="@color/pink_color"
+            app:mrb_pinTextColor="@color/transparent"
+            app:mrb_pinColor="@color/transparent"
+            app:mrb_rangeBarColor="@color/graycolor"
+            app:mrb_tickStart="18"
+            app:mrb_tickEnd="75"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:textStyle="bold"
+            android:id="@+id/cancel_btn"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/update"
+            android:id="@+id/update_btn"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@color/pink_color"
+            android:textColor="@color/white"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+
+</LinearLayout>

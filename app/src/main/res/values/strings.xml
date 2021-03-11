@@ -1,0 +1,243 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">GoSesh</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="phonetext" translatable="false">Enter a phone number that can be used to verify your identity with a text message or phone call. </string>
+
+   
+
+  
+    <string name="facebook_app_id">fb_app_id</string>
+    <string name="fb_login_protocol_scheme">fb(fb_app_id)</string>
+    
+
+
+    <string name="admob_appid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="my_Interstitial_Add" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+
+
+ 
+
+    <!--if you install the app form android studio-->
+     <string name="google_debug_key" translatable="false">AIzaSyDWJpJBOga6Br0b1Z8ZnvtXTUyyhOE9hbY</string>
+
+    <!--if you install the app form Play store-->
+   <string name="google_release_key" translatable="false">AIzaSyDWJpJBOga6Br0b1Z8ZnvtXTUyyhOE9hbY</string>
+
+
+    <!--debug key if install from android studio or release key if install from playstore-->
+     <string name="Places_api" translatable="false">AIzaSyDWJpJBOga6Br0b1Z8ZnvtXTUyyhOE9hbY</string>
+
+   <string name="firebase_server_key" translatable="false">firebase_server_key_here</string>
+    
+
+
+
+    <string name="device" translatable="false">android</string>
+
+
+
+    <string-array name="language_names_for_show">
+        <item>English</item>
+        <item>العربية</item>
+    </string-array>
+
+    <string-array name="language_names_for_api">
+        <item>english</item>
+        <item>arabic</item>
+    </string-array>
+
+    <string-array name="language_code">
+        <item>en</item>
+        <item>ar</item>
+    </string-array>
+
+
+
+    <string name="arabic" translatable="false">العربية</string>
+    <string name="english" translatable="false">English</string>
+
+
+    <string name="chat">Chat</string>
+    <string name="send_message_here">Send Message Here...</string>
+
+
+    <string name="enable_location">Enable location</string>
+    <string name="you_ll_need_to_enable_your_location_n_in_order_to_use_binder">You\'ll need to enable your location\n in order to use GoSesh</string>
+    <string name="allow_location">Allow Location</string>
+
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="next">Next</string>
+
+
+    <string name="unlimited_rewinds">Unlimited Rewinds</string>
+    <string name="free_superlike_a_day">5 Free SuperLikes A Day</string>
+    <string name="unlimited_boost">Unlimited Boost</string>
+    <string name="_19_99">$19.99</string>
+    <string name="per_month">Per Month</string>
+    <string name="_29_99">$29.99</string>
+    <string name="_3_months">3 months</string>
+    <string name="_69_99">$69.99</string>
+    <string name="_1_year">1 year</string>
+    <string name="continue_txt">Continue</string>
+    <string name="no_thanks">No Thanks</string>
+    <string name="subscription_txt">By tapping “Continue”, your payment will be charged to your Google Play
+        account, and your subscription will automatically renew for the same
+        package length at the same price until you cancel it in settings in the
+        Google Play store at least 24 hours prior to the end of the current period.
+        By tapping “Continue”, you agree to our Privacy Policy and Terms.</string>
+    <string name="recuring_billing_cancel_anytime">Recuring billing, cancel anytime.</string>
+
+
+
+    <string name="login_description_1">Discover new and interesting\n people nearby</string>
+    <string name="login_description_2">Swipe right to like someone\n or swipe left to pass</string>
+    <string name="login_description_3">If they also swipe right then it\'s a match!</string>
+    <string name="continue_with_facebook">Continue with facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="continue_with_phone">Continue with Phone</string>
+    <string name="we_don_t_post_anything_to_facebook">We don\'t Post anything to Facebook.</string>
+
+
+
+    <string name="phone_number">Phone Number</string>
+    <string name="usa">USA</string>
+    <string name="your_phone_number">your phone number</string>
+    <string name="_1">+1</string>
+    <string name="location">Location</string>
+    <string name="save_location">Save Location</string>
+    <string name="verify_phone">Verify Phone</string>
+    <string name="confirm">Confirm</string>
+    <string name="we_send_you_a_code_to_verify_your_phone_number">We send you a code to verify your phone number</string>
+    <string name="send_to">Send to ()</string>
+
+
+
+    <string name="introducting_binder_boost">Introducting GoSesh Boost</string>
+    <string name="skip_the_line">Skip the Line</string>
+    <string name="be_the_top_profile_in_your_area_for_30_minutes_and_get_more_watchs">Be the top profile in your area for 30 minutes and get more watchs</string>
+    <string name="boost_me">Boost Me</string>
+    <string name="_08_85_remaining">08:85 Remaining</string>
+    <string name="you_re_being_seen_by_more_people_keep_swiping_for_the_best_results">You\'re being seen by more people.Keep swiping for the best results!</string>
+    <string name="okey">OKEY</string>
+
+
+
+    <string name="edit_profile">Edit Profile</string>
+    <string name="about_profile_name">About Profile name</string>
+    <string name="about">About</string>
+    <string name="job_title">Job Title</string>
+    <string name="company">Company</string>
+    <string name="school_college">School/College</string>
+    <string name="gender">Gender</string>
+
+    <string name="new_matches">New Matches</string>
+    <string name="_0_likes">0 Likes</string>
+    <string name="no_other_match_found_yet">No other Match Found yet.</string>
+    <string name="message">Message</string>
+
+    <string name="it_s_match">it\'s Match!</string>
+    <string name="you_and_alison_likes_each_other">you and alison likes each other</string>
+    <string name="send_a_message">Send a Message</string>
+
+    <string name="profile_name">Profile Name</string>
+    <string name="settings">Settings</string>
+
+
+
+    <string name="swiping_in">Swiping in</string>
+    <string name="my_current_location">My Current Location</string>
+    <string name="add_new_location">Add New Location</string>
+    <string name="show_me">Show me</string>
+    <string name="men">Men</string>
+    <string name="women">Women</string>
+    <string name="maximum_distance">Maximum Distance</string>
+    <string name="mile">mile</string>
+    <string name="miles">miles</string>
+    <string name="age_range">Age Range</string>
+    <string name="year">Year</string>
+    <string name="years">Years</string>
+    <string name="show_me_on_binder">Show me On GoSesh</string>
+    <string name="don_t_show_my_age">Don\'t show my Age</string>
+    <string name="make_my_distance_invisible">Make my Distance Invisible</string>
+    <string name="legal">Legal</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+
+
+    <string name="cancel">Cancel</string>
+    <string name="update">Update</string>
+
+
+    <string name="username">Username</string>
+    <string name="your_message">Your Message</string>
+
+
+    <string name="report">Report</string>
+
+    <string name="get_the_rewind">Get the Rewind</string>
+    <string name="are_you_sure">Are you Sure?</string>
+
+    <string name="delete_account_description">Delete an Account will Erase all of your data Completely</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string name="are_you_sure_report_user">Are you sure to Report this user?</string>
+    <string name="delete_this_message">Delete this message</string>
+    <string name="unmatch_this_user">Unmatch this User</string>
+    <string name="unblock_this_user">Unblock this User</string>
+    <string name="block_this_user">Block this User</string>
+
+
+    <string name="likes_limit">Your Likes Limit exceeded</string>
+    <string name="superlikes_limit">Your SuperLikes Limit exceeded</string>
+
+
+    <string name="calling">Calling...</string>
+    <string name="reconnecting_to">Reconnecting to</string>
+    <string name="reconnecting">Reconnecting</string>
+    <string name="connected_to">Connected to</string>
+    <string name="connected">Connected</string>
+    <string name="failed_to_connect">Failed to connect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnected_from">Disconnected from</string>
+    <string name="audio_connected">Audio Connected</string>
+    <string name="audio_unpublished">Audio Unpublished</string>
+    <string name="video_connected">Video Connected</string>
+    <string name="video_unpublished">Video Unpublished</string>
+    <string name="audio_subscribed">Audio Subscribed</string>
+    <string name="audio_unsubscribed">Audio Unsubscribed</string>
+    <string name="audio_subscription_failed">Audio Subscription Failed</string>
+    <string name="video_subscribed">Video Subscribed</string>
+    <string name="video_unsubscribed">Video Unsubscribed</string>
+    <string name="video_subscription_failed">Video Subscription Failed</string>
+    <string name="joined">" joined"</string>
+    <string name="ringing">Ringing...</string>
+    <string name="alert">Alert</string>
+    <string name="voice_reah_limit">You have reached out of your Voice Call limit.</string>
+    <string name="video_reach_limit">You have reached out of your Video Call limit.</string>
+
+    <string name="done">Done</string>
+    <string name="no_internet">No Internet. Connect to wifi or cellular network.</string>
+    <string name="discovery_settings">Discovery Settings</string>
+    <string name="language">Language</string>
+    <string name="upgrade_to_gold_to_see_people_n_who_already_likes_you">Upgrade to Gold to see people\n Who already likes you.</string>
+    <string name="no_other_users_like_your_profile_so_far_subscribe_us_and_boost_your_profile_so_more_user_can_see_you">No other users like your profile so far. Subscribe us and boost your profile so more user can see you.</string>
+    <string name="see_who_likes_you">See who likes you</string>
+
+
+</resources>
+
+
+
+
+
+

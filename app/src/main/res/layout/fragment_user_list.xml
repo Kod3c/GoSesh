@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/User_likes_F"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/User_list_F">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/cardview"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                app:elevation="0dp"
+                android:translationZ="0.1dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetStart="0dp"
+                    app:contentInsetEnd="0dp"
+                    android:id="@+id/toolbar"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    android:background="@color/white">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:id="@+id/top_layout"
+                        android:background="@color/gainsboro">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_0_likes"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="15dp"
+                            android:textSize="18dp"
+                            android:id="@+id/title_txt"
+                            android:textColor="@color/black"/>
+
+                        <ImageButton
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:src="@drawable/ic_cross"
+                            android:id="@+id/back_btn"
+                            android:scaleType="fitCenter"
+                            android:background="@color/transparent"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="5dp"
+                            android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:textSize="16dp"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:id="@+id/subscribe_txt"
+                            android:textColor="@color/black"
+                            android:background="@color/white"
+                            android:text="@string/upgrade_to_gold_to_see_people_n_who_already_likes_you"
+                            android:layout_centerHorizontal="true"/>
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recylerview"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/progress_bar"
+                android:theme="@style/Widget.AppCompat.ProgressBar"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_margin="25dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:id="@+id/nodata_found_txt"
+                android:textColor="@color/black"
+                android:background="@color/white"
+                android:text="@string/no_other_users_like_your_profile_so_far_subscribe_us_and_boost_your_profile_so_more_user_can_see_you"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/see_who_likes_you"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:layout_margin="60dp"
+                android:textSize="16dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/borderlessButtonStyle"
+                android:background="@drawable/ic_pink_background"
+                android:id="@+id/subscribe_btn"/>
+
+        </RelativeLayout>
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+
+</FrameLayout>

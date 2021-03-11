@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.9"
+        android:id="@+id/transparent_layout"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/graycolor">
+
+        <RelativeLayout
+            android:id="@+id/iv_ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_marginTop="30dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/circularProgressBar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cpb_background_progressbar_color="#E3E3E5"
+                app:cpb_background_progressbar_width="6dp"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color="#9651D1"
+                app:cpb_progressbar_width="6dp"
+                app:cpb_round_border="true" />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:src="@drawable/ic_boost"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/remaining_txt"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_08_85_remaining"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/remaining_txt"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/you_re_being_seen_by_more_people_keep_swiping_for_the_best_results"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/dark_gray"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_line"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tv_des"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/d_bottom_gray_line"/>
+
+        <RelativeLayout
+            android:layout_below="@+id/rl_line"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/okey"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:id="@+id/okay_btn"
+                android:textColor="@color/dark_gray"/>
+
+
+
+        </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

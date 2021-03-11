@@ -1,0 +1,32 @@
+AndroidMenifest.xml
+
+Now we are fetching the user image from our server instead of firebase.
+
+so where ever in the app a user images is show you have to go to their respected java call and change the link their.
+
+we are also telling you which files has been changed.
+qboxus.binder >> Accounts >> Get_User_Info_A.java
+qboxus.binder >> Accounts >> Login_A.java
+
+qboxus.binder >> Inbox >> Inbox_Adapter.java
+qboxus.binder >> Inbox >> Inbox_F.java
+qboxus.binder >> Inbox >> Matches_Adapter.java
+
+
+qboxus.binder >> Match >> Match_F.java
+
+qboxus.binder >> Profile >> EditProfile >> EditProfile_F.java
+qboxus.binder >> Profile >> EditProfile >> Profile_photos_Adapter.java
+qboxus.binder >> Profile >> Profile_F.java
+
+
+qboxus.binder >> Users >> Images_sliding_adapter.java
+qboxus.binder >> Users >> User_Adapter.java
+
+qboxus.binder >> UsersLikes >> User_Like_Adapter.java
+qboxus.binder >> Inbox >> Matches_Adapter.java
+
+qboxus.binder >> Video_Calling >> VideoActivity.java
+
+qboxus.binder >>  See_Full_Image_F.java
+

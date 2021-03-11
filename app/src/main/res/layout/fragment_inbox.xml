@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context="com.twdev.gosesh.Inbox.Inbox_F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_matches"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/pink_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp">
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:id="@+id/likes_count_layout"
+                android:visibility="gone">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/likes_image"
+                android:layout_above="@+id/likes_count_txt"
+                app:roundAsCircle="true"
+                app:roundingBorderWidth="1dp"
+                app:roundingBorderPadding="1dp"
+                app:roundingBorderColor="@color/pink_color"
+                app:placeholderImageScaleType="centerCrop"
+                app:actualImageScaleType="fitCenter"
+                fresco:placeholderImage="@drawable/image_placeholder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/_0_likes"
+                    android:textSize="11dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"
+                    android:id="@+id/likes_count_txt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/match_list"
+                android:layout_toEndOf="@+id/likes_count_layout"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_other_match_found_yet"
+                android:textColor="@color/dimgray"
+                android:textSize="13dp"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:id="@+id/no_match_txt"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/pink_color"/>
+
+        <com.chauthai.overscroll.RecyclerViewBouncy
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:id="@+id/inboxlist">
+
+        </com.chauthai.overscroll.RecyclerViewBouncy>
+    </LinearLayout>
+</FrameLayout>

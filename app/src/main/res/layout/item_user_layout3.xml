@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image"
+                fresco:placeholderImage="@drawable/image_placeholder"
+                app:placeholderImageScaleType="centerCrop"
+                app:actualImageScaleType="centerCrop"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:paddingStart="3dp"
+                android:paddingBottom="2dp"
+                android:gravity="bottom"
+                android:background="@drawable/text_background"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toStartOf="@+id/supperlike_btn">
+
+                 <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/username"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:shadowColor="@color/black"
+                        android:textColor="@color/white"/>
+
+                 </LinearLayout>
+
+                  <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/distance_txt"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:shadowDx="4"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:text=""
+                        android:gravity="bottom"
+                        android:shadowColor="@color/black"
+                        android:textColor="@color/white"/>
+
+                  </LinearLayout>
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/supperlike_img"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_superlike"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/left_overlay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dislike_image"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp"/>
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/right_overlay"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like_image"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"/>
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

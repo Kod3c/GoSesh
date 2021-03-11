@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="coloraccent">#fa6565</color>
+    <color name="white">#fff</color>
+    <color name="black">#2F2F2F</color>
+    <color name="graycolor">#D3D3D3</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="lightgraycolor">#f2f2f2</color>
+    <color name="darkgray">#93959A</color>
+    <color name="dimgray">#696969</color>
+    <color name="lightblack">#5d5d5d</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="green">#04b110</color>
+    <color name="light_white">#fffefe</color>
+    <color name="off_white">#f8f6f8</color>
+    <color name="light_blue">#00c5ec</color>
+    <color name="red">#c94844</color>
+    <color name="silver_gray">#617085</color>
+    <color name="light_ferozi">#dbf6fd</color>
+    <color name="delete_message_bg">#f2f2f2</color>
+    <color name="delete_message_text">#b8b8b8</color>
+    <color name="fiftypercenttranparent">#B3ffffff</color>
+    <color name="alphabet_text_selected_color">#3F51B5</color>
+    <color name="pink_color">#fa6565</color>
+
+    <color name="purple_color">#6c2fbb</color>
+    <color name="light_purple_color">#a532e5</color>
+
+</resources>

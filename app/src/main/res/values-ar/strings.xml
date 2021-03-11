@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">بيندر</string>
+
+    <string name="chat">دردشة</string>
+    <string name="send_message_here">أرسل رسالة هنا...</string>
+
+
+    <string name="enable_location">تمكن موقع</string>
+    <string name="you_ll_need_to_enable_your_location_n_in_order_to_use_binder">ستحتاج إلى تمكين موقعك من أجل استخدام الموثق</string>
+    <string name="allow_location">السماح للموقع</string>
+
+
+    <string name="first_name">الاسم الاول</string>
+    <string name="last_name">الكنية</string>
+    <string name="date_of_birth">تاريخ الولادة</string>
+    <string name="male">الذكر</string>
+    <string name="female">أنثى</string>
+    <string name="next">التالى</string>
+
+
+    <string name="unlimited_rewinds">رياح غير محدودة</string>
+    <string name="free_superlike_a_day">مجانا مثل يوم واحد</string>
+    <string name="unlimited_boost">دفعة غير محدودة</string>
+    <string name="_19_99">$19.99</string>
+    <string name="per_month">لكل شهر</string>
+    <string name="_29_99">$29.99</string>
+    <string name="_3_months">3 اشهر</string>
+    <string name="_69_99">$69.99</string>
+    <string name="_1_year">1 عام</string>
+    <string name="continue_txt">استمرار_ملف</string>
+    <string name="no_thanks"> لا شكرا</string>
+    <string name="subscription_txt">من خلال النقر على "متابعة" ، سيتم خصم دفعتك من Google Play الخاص بك
+        الحساب ، وسيتم تجديد اشتراكك تلقائيًا لنفس الحساب
+        طول الحزمة بنفس السعر حتى تلغيها في الإعدادات في
+        متجر Google Play قبل 24 ساعة على الأقل من نهاية الفترة الحالية.
+        بالنقر على "متابعة" ، فإنك توافق على سياسة الخصوصية وشروطنا.</string>
+    <string name="recuring_billing_cancel_anytime">جاري استرداد الفواتير في أي وقت.</string>
+
+
+
+    <string name="login_description_1">اكتشف أشخاصًا جدد ومثيرين للاهتمام \n بالقرب منهم</string>
+    <string name="login_description_2">مرر سريعًا لليمين مثل شخص ما \n أو مرر سريعًا لليسار لتمريره</string>
+    <string name="login_description_3">إذا قاموا أيضًا بالتمرير سريعًا لليمين ، فهذه مطابقة!</string>
+    <string name="continue_with_facebook">تواصل مع الفيسبوك</string>
+    <string name="continue_with_google">تابع مع Google</string>
+    <string name="continue_with_phone">تواصل مع الهاتف</string>
+    <string name="we_don_t_post_anything_to_facebook">نحن لا ننشر أي شيء على Facebook.</string>
+
+
+
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="usa">الولايات المتحدة الأمريكية</string>
+    <string name="your_phone_number">رقم تليفونك</string>
+    <string name="_1">+1</string>
+    <string name="location">موقعك</string>
+    <string name="save_location">حفظ الموقع</string>
+    <string name="verify_phone">تحقق الهاتف</string>
+    <string name="confirm">تؤكد</string>
+    <string name="we_send_you_a_code_to_verify_your_phone_number">نرسل لك رمزًا للتحقق من رقم هاتفك</string>
+    <string name="send_to">()ارسل إلى</string>
+
+
+
+    <string name="introducting_binder_boost">تقديم تعزيز الموثق</string>
+    <string name="skip_the_line">تعدى الخط</string>
+    <string name="be_the_top_profile_in_your_area_for_30_minutes_and_get_more_watchs">كن الشخصية البارزة في منطقتك لمدة 30 دقيقة واحصل على المزيد من الساعات</string>
+    <string name="boost_me">تعزيز لي</string>
+    <string name="_08_85_remaining">المتبقي 08:85</string>
+    <string name="you_re_being_seen_by_more_people_keep_swiping_for_the_best_results">يشاهدك المزيد من الأشخاص. استمر في التمرير سريعًا للحصول على أفضل النتائج!</string>
+    <string name="okey">حسنا</string>
+
+
+
+    <string name="edit_profile">تعديل الملف الشخصي</string>
+    <string name="done">فعله</string>
+    <string name="about_profile_name">حول اسم ملف التعريف</string>
+    <string name="about">حول</string>
+    <string name="job_title">المسمى الوظيفي</string>
+    <string name="company">شركة</string>
+    <string name="school_college">مدرسة، كلية</string>
+    <string name="gender">جنس</string>
+
+    <string name="new_matches">مباريات جديدة</string>
+    <string name="_0_likes">0 الإعجابات</string>
+    <string name="no_other_match_found_yet">لم يتم العثور على تطابق آخر حتى الآن.</string>
+    <string name="message">رسالة</string>
+
+    <string name="it_s_match">انها مباراة!</string>
+    <string name="you_and_alison_likes_each_other">أنت وأليسون يحبان بعضهما البعض</string>
+    <string name="send_a_message">ارسل رسالة</string>
+
+    <string name="profile_name">اسم الشخصية</string>
+    <string name="settings">إعدادات</string>
+
+
+
+    <string name="swiping_in">الضرب</string>
+    <string name="my_current_location">موقعي الحالي</string>
+    <string name="add_new_location">إضافة موقع جديد</string>
+    <string name="show_me">أرني</string>
+    <string name="men">رجال</string>
+    <string name="women">نساء</string>
+    <string name="maximum_distance">المسافة القصوى</string>
+    <string name="mile">ميل</string>
+    <string name="miles">اميال</string>
+    <string name="age_range">الفئة العمرية</string>
+    <string name="year">عام</string>
+    <string name="years">سنوات</string>
+    <string name="show_me_on_binder">أرني على الموثق</string>
+    <string name="don_t_show_my_age">لا تظهر عمري</string>
+    <string name="make_my_distance_invisible">جعل مسافة غير مرئية</string>
+    <string name="legal">قانوني</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="delete_account">حذف الحساب</string>
+
+
+    <string name="cancel">إلغاء</string>
+    <string name="update">تحديث</string>
+
+
+    <string name="username">اسم المستخدم</string>
+    <string name="your_message">رسالتك</string>
+
+
+    <string name="report">نقل</string>
+
+    <string name="get_the_rewind">احصل على الترجيع</string>
+    <string name="are_you_sure">هل أنت واثق؟</string>
+
+    <string name="delete_account_description">حذف الحساب سوف يمحو جميع بياناتك بالكامل</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+
+
+    <string name="are_you_sure_report_user">هل أنت متأكد من الإبلاغ عن هذا المستخدم؟</string>
+    <string name="delete_this_message">احذف هذه الرسالة</string>
+    <string name="unmatch_this_user">إلغاء تطابق هذا المستخدم</string>
+    <string name="unblock_this_user">قم بإلغاء حظر هذا المستخدم</string>
+    <string name="block_this_user">منع هذا المستخدم</string>
+
+
+    <string name="likes_limit">تم تجاوز حد الإعجاب</string>
+    <string name="superlikes_limit">تم تجاوز حد الإعجابات ممتاز الخاص بك</string>
+
+    <string name="calling">جارٍ الاتصال ...</string>
+    <string name="reconnecting_to">جارٍ إعادة الاتصال بـ</string>
+    <string name="reconnecting">جارٍ إعادة الاتصال</string>
+    <string name="connected_to">متصلا</string>
+    <string name="connected">متصل</string>
+    <string name="failed_to_connect">فشل الاتصال</string>
+    <string name="disconnected">انقطع الاتصال</string>
+    <string name="disconnected_from">تم قطع الاتصال بـ</string>
+    <string name="audio_connected">تم توصيل الصوت</string>
+    <string name="audio_unpublished">صوت غير منشور</string>
+    <string name="video_connected">تم توصيل الفيديو</string>
+    <string name="video_unpublished">فيديو غير منشور</string>
+    <string name="audio_subscribed">تم اشتراك الصوت</string>
+    <string name="audio_unsubscribed">إلغاء الاشتراك في الصوت</string>
+    <string name="audio_subscription_failed">فشل الاشتراك الصوتي</string>
+    <string name="video_subscribed">تم اشتراك الفيديو</string>
+    <string name="video_unsubscribed">فيديو غير مشترك</string>
+    <string name="video_subscription_failed">فشل الاشتراك في الفيديو</string>
+    <string name="joined">انضم</string>
+    <string name="ringing">رنين...</string>
+    <string name="alert">إنذار</string>
+    <string name="voice_reah_limit">لقد وصلت إلى حد مكالماتك الصوتية.</string>
+    <string name="video_reach_limit">لقد تجاوزت حد مكالمات الفيديو.</string>
+
+
+    <string name="no_internet">لا انترنت. اتصل بشبكة واي فايأو شبكة خلوية.</string>
+    <string name="discovery_settings">إعدادات الاكتشاف</string>
+    <string name="language">لغة</string>
+    <string name="upgrade_to_gold_to_see_people_n_who_already_likes_you">الترقية إلى Gold لرؤية الأشخاص \ n الذين يحبونك بالفعل.</string>
+    <string name="no_other_users_like_your_profile_so_far_subscribe_us_and_boost_your_profile_so_more_user_can_see_you">لا يوجد مستخدمون آخرون يحبون ملفك الشخصي حتى الآن. اشترك معنا وقم بتعزيز ملفك الشخصي حتى يتمكن المزيد من المستخدمين من رؤيتك.</string>
+    <string name="see_who_likes_you">انظر من يحبك</string>
+
+
+</resources>

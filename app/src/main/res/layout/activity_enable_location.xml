@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.twdev.gosesh.Accounts.Enable_location_A">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/enable_location_txt">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_location_gray"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enable_location"
+            android:textSize="35dp"
+            android:id="@+id/enable_location_txt"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/enable_location_txt"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/dimgray"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:lineSpacingExtra="6dp"
+                android:text="@string/you_ll_need_to_enable_your_location_n_in_order_to_use_binder"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/allow_location"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:background="@drawable/ic_pink_background"
+                    android:id="@+id/enable_location_btn"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>
