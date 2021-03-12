@@ -60,12 +60,12 @@
 
 
     <string name="chat">Chat</string>
-    <string name="send_message_here">Send Message Here...</string>
+    <string name="send_message_here">Send a message...</string>
 
 
-    <string name="enable_location">Enable location</string>
+    <string name="enable_location">Enable Location</string>
     <string name="you_ll_need_to_enable_your_location_n_in_order_to_use_binder">You\'ll need to enable your location\n in order to use GoSesh</string>
-    <string name="allow_location">Allow Location</string>
+    <string name="allow_location">Allow Location Sharing</string>
 
 
     <string name="first_name">First Name</string>
@@ -78,16 +78,16 @@
 
     <string name="unlimited_rewinds">Unlimited Rewinds</string>
     <string name="free_superlike_a_day">5 Free SuperLikes A Day</string>
-    <string name="unlimited_boost">Unlimited Boost</string>
-    <string name="_19_99">$19.99</string>
+    <string name="unlimited_boost">Unlimited Boosts</string>
+    <string name="_19_99">$9.99</string>
     <string name="per_month">Per Month</string>
-    <string name="_29_99">$29.99</string>
-    <string name="_3_months">3 months</string>
+    <string name="_29_99">$28.95</string>
+    <string name="_3_months">3 Months</string>
     <string name="_69_99">$69.99</string>
-    <string name="_1_year">1 year</string>
+    <string name="_1_year">1 Year</string>
     <string name="continue_txt">Continue</string>
     <string name="no_thanks">No Thanks</string>
-    <string name="subscription_txt">By tapping “Continue”, your payment will be charged to your Google Play
+    <string name="subscription_txt">By tapping “Continue”, your balance will be charged to your Google Play
         account, and your subscription will automatically renew for the same
         package length at the same price until you cancel it in settings in the
         Google Play store at least 24 hours prior to the end of the current period.
@@ -102,13 +102,13 @@
     <string name="continue_with_facebook">Continue with facebook</string>
     <string name="continue_with_google">Continue with Google</string>
     <string name="continue_with_phone">Continue with Phone</string>
-    <string name="we_don_t_post_anything_to_facebook">We don\'t Post anything to Facebook.</string>
+    <string name="we_don_t_post_anything_to_facebook">We won\'t post anything to your Facebook.</string>
 
 
 
     <string name="phone_number">Phone Number</string>
     <string name="usa">USA</string>
-    <string name="your_phone_number">your phone number</string>
+    <string name="your_phone_number">  > Your Phone Number</string>
     <string name="_1">+1</string>
     <string name="location">Location</string>
     <string name="save_location">Save Location</string>
@@ -139,11 +139,11 @@
 
     <string name="new_matches">New Matches</string>
     <string name="_0_likes">0 Likes</string>
-    <string name="no_other_match_found_yet">No other Match Found yet.</string>
+    <string name="no_other_match_found_yet">No Match\'s Found Yet :)</string>
     <string name="message">Message</string>
 
-    <string name="it_s_match">it\'s Match!</string>
-    <string name="you_and_alison_likes_each_other">you and alison likes each other</string>
+    <string name="it_s_match">It\'s A Match!</string>
+    <string name="you_and_alison_likes_each_other">You and Alison have both matched.</string>
     <string name="send_a_message">Send a Message</string>
 
     <string name="profile_name">Profile Name</string>
@@ -165,7 +165,7 @@
     <string name="years">Years</string>
     <string name="show_me_on_binder">Show me On GoSesh</string>
     <string name="don_t_show_my_age">Don\'t show my Age</string>
-    <string name="make_my_distance_invisible">Make my Distance Invisible</string>
+    <string name="make_my_distance_invisible">Make My Distance Invisible</string>
     <string name="legal">Legal</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="logout">Logout</string>
@@ -185,20 +185,20 @@
     <string name="get_the_rewind">Get the Rewind</string>
     <string name="are_you_sure">Are you Sure?</string>
 
-    <string name="delete_account_description">Delete an Account will Erase all of your data Completely</string>
+    <string name="delete_account_description">Deleting an account will erase all of your data completely. Are you sure?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
 
 
-    <string name="are_you_sure_report_user">Are you sure to Report this user?</string>
+    <string name="are_you_sure_report_user">Are you sure you want to report this user?</string>
     <string name="delete_this_message">Delete this message</string>
     <string name="unmatch_this_user">Unmatch this User</string>
     <string name="unblock_this_user">Unblock this User</string>
     <string name="block_this_user">Block this User</string>
 
 
-    <string name="likes_limit">Your Likes Limit exceeded</string>
-    <string name="superlikes_limit">Your SuperLikes Limit exceeded</string>
+    <string name="likes_limit">You\'ve exceeded your likes limit.</string>
+    <string name="superlikes_limit">You\'ve exceeded your SuperLikes Limit.</string>
 
 
     <string name="calling">Calling...</string>
@@ -226,12 +226,12 @@
     <string name="video_reach_limit">You have reached out of your Video Call limit.</string>
 
     <string name="done">Done</string>
-    <string name="no_internet">No Internet. Connect to wifi or cellular network.</string>
+    <string name="no_internet">No Internet. Connect to WiFi or a Cellular Network.</string>
     <string name="discovery_settings">Discovery Settings</string>
     <string name="language">Language</string>
-    <string name="upgrade_to_gold_to_see_people_n_who_already_likes_you">Upgrade to Gold to see people\n Who already likes you.</string>
-    <string name="no_other_users_like_your_profile_so_far_subscribe_us_and_boost_your_profile_so_more_user_can_see_you">No other users like your profile so far. Subscribe us and boost your profile so more user can see you.</string>
-    <string name="see_who_likes_you">See who likes you</string>
+    <string name="upgrade_to_gold_to_see_people_n_who_already_likes_you">Upgrade to Gold to see people\n who have already likes you.</string>
+    <string name="no_other_users_like_your_profile_so_far_subscribe_us_and_boost_your_profile_so_more_user_can_see_you">No other users have liked your profile so far. Subscribe to us to boost your profile so more users will see you.</string>
+    <string name="see_who_likes_you">See Who Likes You</string>
 
 
 </resources>

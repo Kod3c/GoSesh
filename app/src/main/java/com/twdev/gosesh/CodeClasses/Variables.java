@@ -120,7 +120,7 @@ public class Variables {
 
 
    
-     public static String domain="http://app.growweedoregon.com/API/index.php?p=";
+     public static String domain="https://app.growweedoregon.com/API/index.php?p=";
      public final static String image_base_url="https://app.growweedoregon.com/API/";
 
     // public static final String TWILIO_ACCESS_TOKEN_SERVER = "twilio_access_token_here";
