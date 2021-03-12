@@ -29,7 +29,7 @@
     <!--debug key if install from android studio or release key if install from playstore-->
      <string name="Places_api" translatable="false">AIzaSyDWJpJBOga6Br0b1Z8ZnvtXTUyyhOE9hbY</string>
 
-   <string name="firebase_server_key" translatable="false">firebase_server_key_here</string>
+   <string name="firebase_server_key" translatable="false">AAAAtqt6mgE:APA91bFACd_B2R78CU7t20E-cED1oTnExJcgv7Axefu6O8Qu-wTv_sP0KAgJlC79OnJn5wz7CBpc8qwJL2RQsQOX19HXr-teSdMkkMRnz8BJABcNIDLsJ4GIF5wf8siWbvDSPy3tpN0u</string>
     
 
 
