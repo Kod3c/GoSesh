@@ -60,30 +60,30 @@
 
 
             <ImageButton
+                android:id="@+id/video_call_btn"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/ic_video"
-                android:background="@color/transparent"
-                android:id="@+id/video_call_btn"
-                android:scaleType="fitCenter"
-                android:padding="5dp"
-                android:tint="@color/coloraccent"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="7dp"
-                android:layout_toStartOf="@+id/voice_call_btn"/>
+                android:layout_toStartOf="@+id/voice_call_btn"
+                android:background="@color/transparent"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_video"
+                android:tint="@color/MyGreen" />
 
             <ImageButton
+                android:id="@+id/voice_call_btn"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/ic_call"
-                android:background="@color/transparent"
-                android:id="@+id/voice_call_btn"
-                android:scaleType="fitCenter"
-                android:padding="5dp"
-                android:tint="@color/coloraccent"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="7dp"
-                android:layout_toStartOf="@+id/alert_btn"/>
+                android:layout_toStartOf="@+id/alert_btn"
+                android:background="@color/transparent"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_call"
+                android:tint="@color/MyGreen" />
 
 
             <ImageButton

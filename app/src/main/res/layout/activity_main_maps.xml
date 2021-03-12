@@ -14,33 +14,31 @@
         android:layout_height="match_parent">
 
         <androidx.percentlayout.widget.PercentRelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar_add_address"
             android:layout_width="match_parent"
-            android:background="@color/pink_color"
             android:layout_height="55dp"
-            android:id="@+id/toolbar_add_address">
+            android:background="@color/green">
 
 
             <TextView
+                android:id="@+id/title_city_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:text="@string/location"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:id="@+id/title_city_tv"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <ImageView
-                android:layout_height="30dp"
-                android:layout_width="30dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_cross_white"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="15dp"
                 android:id="@+id/close_country"
-                />
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_cross_white" />
 
         </androidx.percentlayout.widget.PercentRelativeLayout>
 
@@ -118,19 +116,18 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:layout_centerInParent="true"
-                android:tint="@color/pink_color"
-                android:src="@drawable/ic_location_marker"/>
+                android:src="@drawable/ic_location_marker"
+                android:tint="@color/MyGreen" />
 
         </RelativeLayout>
 
 
         <androidx.percentlayout.widget.PercentRelativeLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/save_loc_div"
             android:layout_width="match_parent"
-            android:background="@color/pink_color"
             android:layout_height="45dp"
             android:layout_alignParentBottom="true"
-            android:id="@+id/save_loc_div">
+            android:background="@color/green">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -138,9 +135,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 android:text="@string/save_location"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
         </androidx.percentlayout.widget.PercentRelativeLayout>
 

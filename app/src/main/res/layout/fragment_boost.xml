@@ -51,14 +51,7 @@
             android:src="@drawable/ic_boost"/>
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/skip_the_line"
-            android:textSize="20dp"
-            android:textColor="@color/white"/>
-
-        <TextView
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"

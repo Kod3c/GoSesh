@@ -16,7 +16,7 @@
             android:topRightRadius="25dp"
             android:topLeftRadius="25dp"
             android:bottomLeftRadius="25dp"/>
-        <solid android:color="#FE5A63"></solid>
+        <solid android:color="#42e667"></solid>
     </shape>
 </item>
 </layer-list>
