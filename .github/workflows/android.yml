@@ -5,8 +5,7 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  tags:
-    - 'v*'
+  
 jobs:
   test:
     name: Run Unit Tests
