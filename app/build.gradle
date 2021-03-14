@@ -11,8 +11,8 @@ android {
         applicationId "com.twdev.gosesh"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 52
-        versionName "Beta 1.2.0"
+        versionCode 53
+        versionName "Production Beta 1.2.0"
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
