@@ -125,7 +125,8 @@
                             android:padding="2dp"
                             android:textStyle="bold"
                             android:layout_marginTop="5dp"/>
-                      </LinearLayout>
+
+                          </LinearLayout>
                       </LinearLayout>
 
                       <LinearLayout
@@ -189,8 +190,22 @@
             android:gravity="center"
             android:background="@color/lightgraycolor">
 
-
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/galada"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="Never Smoke Alone"
+                android:textAllCaps="true"
+                android:textColor="@color/dimgray"
+                android:textSize="24sp"
+                android:textStyle="bold" />
         </LinearLayout>
+
+
 
         </LinearLayout>
 

@@ -139,6 +139,9 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/coloraccent" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
 
         <service android:name="com.twdev.gosesh.Firebase_Notification.Notification_Receive">
