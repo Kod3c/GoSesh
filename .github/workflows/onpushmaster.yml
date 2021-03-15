@@ -56,8 +56,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
-          tag_name: Release
-          release_name: Release
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
 
   sign:
     name: Sign APK
