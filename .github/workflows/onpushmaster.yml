@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: apk
-          path: app/build/outputs/apk/debug/app-debug.apk 
+          path: app/build/outputs/apk/debug/app.apk
 
   sign:
     name: Sign APK, Create Release, Submit to Google
@@ -67,7 +67,6 @@ jobs:
         with:
           files: ${{ env.SIGNED_RELEASE_FILE }}
           name: GS-${{ github.run_number }}
-          tag_name: R-${{ github.run_number }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
@@ -81,6 +80,6 @@ jobs:
         with:
           serviceAccountJson: service_account.json
           packageName: com.twdev.gosesh
-          releaseFile: ${{ steps.create_release.outputs }}
+          releaseFile: ${{ env.SIGNED_RELEASE_FILE }}
           track: internal
           inAppUpdatePriority: 2
