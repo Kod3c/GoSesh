@@ -49,13 +49,13 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: apk
-          path: app/build/
+          path: app/build/1/apk.apk
           
       - name: Sign APK
         id: sign
         uses: r0adkll/sign-android-release@v1
         with:
-          releaseDirectory: app/build/
+          releaseDirectory: app/build/1/apk.apk
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
@@ -77,11 +77,14 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: signed
+          path: app/build/2/signed.apk
 
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
+          files: app/build/2/signed.apk
+          tag_name:	${{ env.GITHUB_RUN_ID }}
           body_path: ${{ github.workflow }}-CHANGELOG.txt
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -92,16 +95,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Upload Release APK
-        id: upload_release_asset
-        uses: actions/upload-release-asset@v1.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: apk/app-debug.apk
-          asset_name: GoSesh-Release.apk
-          asset_content_type: application/zip
+          upload_url: ${{ steps.create_release.outputs }}
 
       - name: Create service_account.json
         id: createServiceAccount
