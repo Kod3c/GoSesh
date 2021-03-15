@@ -49,7 +49,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: apk
-          path: app/build/1/apk.apk
+          path: app/build/1/apk-aligned.apk
           
       - name: Sign APK
         id: sign
