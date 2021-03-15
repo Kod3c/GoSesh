@@ -61,7 +61,7 @@ jobs:
 
   sign:
     name: Sign APK
-    needs: apk
+    needs: release
     runs-on: ubuntu-latest
     steps:
 
@@ -77,7 +77,7 @@ jobs:
 
   submit:
     name: Submit to Google Play
-    needs: apk
+    needs: sign
     runs-on: ubuntu-latest
     steps:
 
