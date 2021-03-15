@@ -73,7 +73,7 @@ jobs:
         
   submit:
     name: Submit to Google Play
-    needs: release
+    needs: apk
     runs-on: ubuntu-latest
     steps:
     
