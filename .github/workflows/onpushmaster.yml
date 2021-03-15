@@ -40,7 +40,7 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk 
 
   sign:
-    name: Sign APK and Create Release
+    name: Sign APK, Create Release, Submit to Google
     needs: apk
     runs-on: ubuntu-latest
     steps:
