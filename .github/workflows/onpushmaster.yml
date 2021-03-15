@@ -81,6 +81,6 @@ jobs:
         with:
           serviceAccountJson: service_account.json
           packageName: com.twdev.gosesh
-          releaseFile: ${{ env.SIGNED_RELEASE_FILE }}
+          releaseFiles: ${{ env.SIGNED_RELEASE_FILE }}
           track: internal
           inAppUpdatePriority: 2
