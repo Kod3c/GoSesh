@@ -94,12 +94,12 @@ public class Variables {
 
 
 
-    public static String gif_api_key1="61gYDkPMZdjHo4giPudhQxsD3AyeqN7F";
+    public static String gif_api_key1="${{ secrets.GIF_API }}";
 
 
     // Bottom two variable Related with in App Subscription
     //First step get licencekey
-    public static String licencekey="MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwUzfMx+oV2HQkvSDMz3Hsl2DfBMjdIjEoalfn/zmFxPzhz0lrrGwy4+p9y8gc0j0pkuMKZmyK42JuibAapof6rAXivtseW3rk1+8HgfBSzepRZh7HhDin0x5UDekd33+QrAbuDwEzCEa4+xmuFKGCDSqnoLGDmVBVCmtop6bamUwn1h1JcNg6M79CdeHEw5ML6IhnEk55gI+wOldyEGdsf/EQBhzjGAl4Seso6Eq59f3sIsT0HYMf+JbC6CySKFa4w6zthJTWPzZOaAK7pJYrN5ODSrnSIOG+zxn15VAGury4wFIso7eU78g+GwO+7HmTJc41SF6lNzwbRz+OMwtsQIDAQAB";
+    public static String licencekey="${{ secrets.LICENCE_KEY }}";
 
     //create the Product id or in app subcription id
     public static String product_ID="com.twdev.gosesh.pro";
