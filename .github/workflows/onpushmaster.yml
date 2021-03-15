@@ -66,7 +66,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ env.SIGNED_RELEASE_FILE }}
-          name: GS-${{ github.run_number }}
+            name: Release ${{ github.run_number }}
+            tag_name: ${{ github.run_number }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
