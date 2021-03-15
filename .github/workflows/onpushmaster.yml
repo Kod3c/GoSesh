@@ -65,7 +65,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: signed
-          path: ${{steps.sign_app.outputs.signedReleaseFile}}
+          path: ${{ env.SIGNED_RELEASE_FILE }}
           
   release:
     name: Create APK Release
