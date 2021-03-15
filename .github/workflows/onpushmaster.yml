@@ -70,12 +70,6 @@ jobs:
           tag_name:	REL-${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        
-  submit:
-    name: Submit to Google Play
-    needs: sign
-    runs-on: ubuntu-latest
-    steps:
     
       - name: Create service_account.json
         id: createServiceAccount
