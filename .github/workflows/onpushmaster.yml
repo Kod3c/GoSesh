@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: aab
-          path: app/build/outputs/apk/debug/app-debug.aab 
+          path: app/build/outputs/bundle/release/app-debug.aab
 
   release:
     name: Create APK Release
