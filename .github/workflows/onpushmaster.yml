@@ -40,7 +40,7 @@ jobs:
           path: app/build/outputs/apk/debug/app-debug.apk 
 
   sign:
-    name: Sign APK
+    name: Sign APK and Create Release
     needs: apk
     runs-on: ubuntu-latest
     steps:
@@ -60,18 +60,6 @@ jobs:
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
-          
-      - name: Upload APK
-        uses: actions/upload-artifact@v1
-        with:
-          name: signed
-          path: ${{ env.SIGNED_RELEASE_FILE }}
-          
-  release:
-    name: Create APK Release
-    needs: sign
-    runs-on: ubuntu-latest
-    steps:
 
       - name: Create Release
         id: create_release
