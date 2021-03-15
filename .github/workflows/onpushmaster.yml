@@ -39,9 +39,25 @@ jobs:
           name: apk
           path: app/build/outputs/apk/debug/app-debug.apk 
 
+  sign:
+    name: Sign APK
+    needs: apk
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Sign APK
+        id: sign
+        uses: r0adkll/sign-android-release@v1
+        with:
+          releaseDirectory: app/build/outputs/apk/debug/
+          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+          alias: ${{ secrets.ALIAS }}
+          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          
   release:
     name: Create APK Release
-    needs: apk
+    needs: release
     runs-on: ubuntu-latest
     steps:
 
@@ -56,24 +72,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
-          tag_name: "GITHUB_RUN_NUMBER"
-          release_name: Release ${{ github.ref }}
-
-  sign:
-    name: Sign APK
-    needs: release
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: Sign APK
-        id: sign
-        uses: r0adkll/sign-android-release@v1
-        with:
-          releaseDirectory: app/build/outputs/apk/debug/app-debug.apk
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: ${{ secrets.ALIAS }}
-          keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          tag_name: ${{ GITHUB_RUN_NUMBER }} 
+          release_name: Release
 
   submit:
     name: Submit to Google Play
