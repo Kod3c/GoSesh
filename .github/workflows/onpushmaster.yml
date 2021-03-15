@@ -73,17 +73,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Download APK from build
-        uses: actions/download-artifact@v1
-        with:
-          name: signed
-          path: app/build/2/signed.apk
-
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          files: app/build/2/signed.apk
+          files: ${{ env.SIGNED_RELEASE_FILE }}
           name: GS-${{ github.ref }}
           tag_name:	REL-${{ github.ref }}
         env:
