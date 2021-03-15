@@ -3,7 +3,7 @@ name: OnPush
 on:
   push:
     branches:
-      - '*'
+      - 'master'
   
 jobs:
   test:
