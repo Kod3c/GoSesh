@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: aab
-          path: app/build/outputs/aab/debug/app-debug.aab 
+          path: app/build/outputs/apk/debug/app-debug.aab 
 
   release:
     name: Create APK Release
@@ -96,7 +96,7 @@ jobs:
         id: sign2
         uses: r0adkll/sign-android-release@v1
         with:
-          releaseDirectory: app/build/outputs/aab/debug/
+          releaseDirectory: /home/runner/work/GoSesh/GoSesh/app/build/outputs/apk/debug/
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
