@@ -57,7 +57,7 @@ jobs:
           path: app/build/outputs/aab/debug/app-debug.aab 
 
   release:
-    name: Release APK
+    name: Create APK Release
     needs: apk
     runs-on: ubuntu-latest
     steps:
@@ -73,8 +73,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
         with:
-          tag_name: $GITHUB_RUN_ID
-          release_name: Release $GITHUB_RUN_ID
+          tag_name: Release
+          release_name: Release
+
+  sign:
+    name: Sign APK & AAB
+    needs: apk
+    runs-on: ubuntu-latest
+    steps:
 
       - name: Sign APK
         id: sign
@@ -95,6 +101,12 @@ jobs:
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
           keyPassword: ${{ secrets.KEY_PASSWORD }}
+
+  submit:
+    name: Submit to Google Play
+    needs: apk
+    runs-on: ubuntu-latest
+    steps:
 
       - name: Upload Release APK
         id: upload_release_asset
