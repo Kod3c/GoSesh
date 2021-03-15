@@ -84,9 +84,8 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: app/build/2/signed.apk
-          name: GS-${{ env.GITHUB_RUN_ID }}
-          tag_name:	REL-${{ env.GITHUB_RUN_ID }}
-          body_path: ${{ github.workflow }}-CHANGELOG.txt
+          name: GS-${{ github.ref }}
+          tag_name:	REL-${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
