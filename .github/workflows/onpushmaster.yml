@@ -73,7 +73,7 @@ jobs:
         with:
           body_path: ${{ github.workflow }}-CHANGELOG.txt
         env:
-          GITHUB_TOKEN
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
   submit:
     name: Submit to Google Play
