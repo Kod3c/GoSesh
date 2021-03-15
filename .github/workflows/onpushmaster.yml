@@ -49,13 +49,13 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: apk
-          path: app/build/1/apk-aligned.apk
+          path: app/build/1/
           
       - name: Sign APK
         id: sign
         uses: r0adkll/sign-android-release@v1
         with:
-          releaseDirectory: app/build/1/apk-aligned.apk
+          releaseDirectory: app/build/1/
           signingKeyBase64: ${{ secrets.SIGNING_KEY }}
           alias: ${{ secrets.ALIAS }}
           keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
