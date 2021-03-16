@@ -68,12 +68,9 @@ android {
         include mFileName
     }
 
-/*
     afterEvaluate {
-        assembleRelease.doLast {
-            tasks.copyApkFiles.execute()
-        }
-    }*/
+         assembleRelease.finalizedBy(copyApkFiles)
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
