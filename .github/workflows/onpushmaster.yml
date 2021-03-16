@@ -32,12 +32,12 @@ jobs:
         with:
           java-version: 1.8
       - name: Build APK
-        run: bash ./gradlew assembleDebug --stacktrace
+        run: bash ./gradlew assembleRelease --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v1
         with:
           name: apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: app/release/app-release.apk
 
   sign:
     name: Sign APK, Create Release, Submit to Google

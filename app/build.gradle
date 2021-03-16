@@ -61,7 +61,7 @@ android {
             }
         }
     }
-
+/*
     task copyApkFiles(type: Copy){
         from 'build/outputs/apk/release'
         into '../apk'
@@ -69,11 +69,9 @@ android {
     }
 
     afterEvaluate {
-        assembleRelease.doLast {
-            tasks.copyApkFiles.execute()
-        }
+         assembleRelease.finalizedBy(copyApkFiles)
     }
-
+*/
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
