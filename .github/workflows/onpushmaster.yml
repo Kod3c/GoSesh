@@ -79,7 +79,7 @@ jobs:
         id: deploy
         uses: r0adkll/upload-google-play@v1
         with:
-          serviceAccountJson: service_account.json
+          serviceAccountJson: app/google-services.json
           packageName: com.twdev.gosesh
           releaseFiles: ${{ env.SIGNED_RELEASE_FILE }}
           track: internal
