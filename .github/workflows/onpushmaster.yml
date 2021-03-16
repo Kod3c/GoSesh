@@ -65,7 +65,7 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          files: app-release-signed-${{ github.run_number }}.apk
+          files: ${{ env.SIGNED_RELEASE_FILE }}
           name: Release ${{ github.run_number }}
           tag_name: ${{ github.run_number }}
         env:
@@ -81,6 +81,6 @@ jobs:
         with:
           serviceAccountJson: service_account.json
           packageName: com.twdev.gosesh
-          releaseFiles: app-release-signed-${{ github.run_number }}.apk
+          releaseFiles: ${{ env.SIGNED_RELEASE_FILE }}
           track: internal
           inAppUpdatePriority: 2
