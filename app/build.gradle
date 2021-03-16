@@ -62,7 +62,7 @@ android {
         }
     }
 
-    task copyApkFiles(type: Copy, dependsOn: assembleRelease){
+    task copyApkFiles(type: Copy){
         from 'build/outputs/apk/release'
         into '../apk'
         include mFileName
