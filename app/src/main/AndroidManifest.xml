@@ -32,7 +32,8 @@
         android:name="com.twdev.gosesh.CodeClasses.Binder"
         android:requestLegacyExternalStorage="true"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:theme="@style/noactionbar_whiteStatus">
+        android:theme="@style/noactionbar_whiteStatus"
+        android:debuggable="false">
 
 
 
