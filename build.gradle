@@ -9,7 +9,7 @@ buildscript {
     }
     repositories {
         google()
-        jcenter { url "http://jcenter.bintray.com/"}
+        jcenter()
     }
     dependencies {
 
@@ -24,9 +24,9 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter { url "http://jcenter.bintray.com/"}
         maven { url  "https://giphy.bintray.com/giphy-sdk" }
         maven { url 'https://jitpack.io' }
+        jcenter()
     }
 }
 
