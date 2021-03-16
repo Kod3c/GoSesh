@@ -32,7 +32,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build APK
-        run: bash ./gradlew build --stacktrace
+        run: bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v1
         with:
