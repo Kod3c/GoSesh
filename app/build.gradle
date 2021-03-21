@@ -42,7 +42,7 @@ android {
             minSdkVersion 21
             targetSdkVersion 29
             applicationId "com.twdev.gosesh" // 3: change to your package name
-            versionCode 36
+            versionCode 40
             versionName "${mVersionName} Build: ${versionProps['VERSION_BUILD']}"
             multiDexEnabled true
             testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
